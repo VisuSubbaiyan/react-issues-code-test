@@ -1,26 +1,32 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { ThemeProvider } from 'styled-components';
 import './App.css';
+import MainWrapper from './components/MainWrapper';
+import Issues from './components/Issues';
 
 class App extends Component {
+  theme = {
+    primary: '#20232a',
+    secondary: '#ccc',
+    lightGrey: '#dcdcdc',
+    smallFont: '10px',
+    linkColor: '#0366d6',
+    breakpoints: {
+      small: 640,
+      medium: 769
+    }
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <ThemeProvider theme={this.theme}>
+        <MainWrapper>
+          <header className="App-header">
+            <p>React Issues</p>
+          </header>
+          <Issues />
+        </MainWrapper>
+      </ThemeProvider>
     );
   }
 }
