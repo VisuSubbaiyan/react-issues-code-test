@@ -3,27 +3,17 @@ import { ThemeProvider } from 'styled-components';
 import './App.css';
 import MainWrapper from './components/MainWrapper';
 import Issues from './components/Issues';
+import { theme } from './helpers/config';
+import Header from './components/Header';
+
+// Note: I didn't use redux for this simple application
 
 class App extends Component {
-  theme = {
-    primary: '#20232a',
-    secondary: '#ccc',
-    lightGrey: '#dcdcdc',
-    smallFont: '10px',
-    linkColor: '#0366d6',
-    breakpoints: {
-      small: 640,
-      medium: 769
-    }
-  }
-
   render() {
     return (
-      <ThemeProvider theme={this.theme}>
+      <ThemeProvider theme={theme}>
         <MainWrapper>
-          <header className="App-header">
-            <p>React Issues</p>
-          </header>
+          <Header />
           <Issues />
         </MainWrapper>
       </ThemeProvider>

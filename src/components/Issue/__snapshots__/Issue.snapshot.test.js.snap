@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Issue component should render correctly according to props 1`] = `
+"<div class=\\"issue sc-bdVaJa IwQOz\\">
+  <svg fill=\\"green\\" css=\\"flex: 1 0 0;\\" class=\\"sc-EHOje isaVFh\\">issueStatus.svg</svg>
+  <div class=\\"sc-bwzfXH jXZiCh\\"><a href=\\"https://github.com/facebook/react/pull/14974\\" class=\\"sc-bxivhb KqdGy\\">Fix act() tests by properly unmounting the container</a>
+    <label
+    font-weight=\\"bold\\" class=\\"sc-htpNat kPKryi\\">CLA Signed</label>
+      <div class=\\"sc-bwzfXH jXZiCh\\">
+        <label font-weight=\\"normal\\" class=\\"sc-htpNat ePqaPb\\">#14974 opened 6 days ago by philipp-spiess</label>
+      </div>
+  </div>
+</div>"
+`;

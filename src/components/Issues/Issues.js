@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
-import gitHubAPI from '../../services/githubServices';
+import githubAPI from '../../services/githubServices';
 import Label from '../Label';
 import Issue from '../Issue';
-import IssueWrapper from '../IssueWrapper';
+import { IssueWrapper } from '../Issue/Issue.styled';
+import { IssuesMainWrapper } from './issues.styled';
 
 const renderIssues = (issues = []) => issues.map(issue => <Issue {...issue} key={issue.id} />);
 
 class Issues extends Component {
+  static defaultProps = {
+    issues: []
+  }
+
   state = {
     page: 1,
     status: 'open',
     loading: false,
-    issues: [],
+    issues: this.props.issues,
     allIssuesLoaded: false
   }
 
@@ -38,7 +43,7 @@ class Issues extends Component {
 
   loadIssues = async () => {
     const { page, status, issues } = this.state;
-    const newIssues = await gitHubAPI
+    const newIssues = await githubAPI
       .get('/issues', { params: { page, status } })
       .then(res => res.data);
     const allIssuesLoaded = newIssues.length === 0;
@@ -57,15 +62,14 @@ class Issues extends Component {
     const { loading, issues } = this.state;
 
     return (
-      <div className="issues">
+      <IssuesMainWrapper className="issues">
         {renderIssues(issues)}
         {loading &&
           <IssueWrapper>
             <Label fontWeight='bold' css={'text-align: center;'}>{'Loading...'}</Label>
           </IssueWrapper>
         }
-
-      </div>
+      </IssuesMainWrapper>
     )
   }
 }

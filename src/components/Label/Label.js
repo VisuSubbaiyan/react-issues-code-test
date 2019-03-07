@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { styling } from '../../helpers/util';
 
 const Label = styled.label`
   background: ${props => props.bgColor};
@@ -12,7 +13,7 @@ const Label = styled.label`
     display: inline-block;
     vertical-align: middle;
   `}
-  ${props => props.css && css`${props.css}`}
+  ${styling}
 `;
 
 Label.defaultProps = {

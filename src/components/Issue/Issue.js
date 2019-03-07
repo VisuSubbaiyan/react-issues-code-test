@@ -1,12 +1,11 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
-import IssueWrapper from '../IssueWrapper';
-import IssueContainer from '../IssueContainer';
+import { IssueWrapper, IssueContainer } from './Issue.styled';
 import Label from '../Label';
 import Link from '../Link';
 import Comments from '../Comments';
 import { StatusIcon } from '../Icons';
-import { deriveOlderDays } from '../../util';
+import { deriveOlderDays } from '../../helpers/util';
 
 const renderLabels = labels => labels.map(({ id, name, color }) =>
   <Label key={id} bgColor={`#${color}`} fontWeight='bold' chips >{name}</Label>);
@@ -19,9 +18,9 @@ const Issue = ({ title, html_url, labels = [], comments, number, created_at, use
     <IssueContainer>
       <Link href={html_url} css={additionalCss}>{title}</Link>
       {renderLabels(labels)}
-      <div>
+      <IssueContainer>
         <Label>{`#${number} opened ${deriveOlderDays(created_at)} ago by ${user.login}`}</Label>
-      </div>
+      </IssueContainer>
     </IssueContainer>
     <Comments comments={comments} href={html_url} />
   </IssueWrapper>

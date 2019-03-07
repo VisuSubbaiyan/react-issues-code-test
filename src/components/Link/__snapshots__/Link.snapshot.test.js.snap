@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link should render correctly according to props 1`] = `"<a href=\\"/test\\" class=\\"sc-bdVaJa bdOLxK\\">sample text</a>"`;
