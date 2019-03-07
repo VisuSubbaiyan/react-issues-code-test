@@ -1,4 +1,5 @@
 import React from 'react';
+import 'jest-styled-components';
 
 import Issues from './Issues';
 import Issue from '../Issue';

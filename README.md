@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Code test update
+Since its small application, I didnt use redux and redux-thunk libararies,
+Due to the time constrain I couldn't work with filter and sort option, 
+but I have very good knowledge in redux state management and ES2016.
+
 ## Available Scripts
 
 In the project directory, you can run:

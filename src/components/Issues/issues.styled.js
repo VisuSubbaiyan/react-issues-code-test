@@ -7,3 +7,9 @@ export const IssuesMainWrapper = styled.div`
   margin: 0 auto;
   ${props => viewport(props.theme.breakpoints.medium)`width: 720px;`}
 `;
+
+export const SpinnerWrapper = styled.div`
+  display: flex;
+  min-height: 40px;
+  justify-content: center;
+`;

@@ -2,23 +2,23 @@
 
 exports[`Issues should render correctly 1`] = `
 "<div class=\\"issues sc-bZQynM kueXeN\\">
-  <div class=\\"issue sc-bwzfXH feTYWS\\">
+  <div class=\\"issue sc-bdVaJa IwQOz\\">
     <svg fill=\\"green\\" css=\\"flex: 1 0 0;\\" class=\\"sc-EHOje isaVFh\\">issueStatus.svg</svg>
-    <div class=\\"sc-htpNat cIOpPI\\"><a href=\\"https://github.com/facebook/react/pull/14974\\" class=\\"sc-bxivhb KqdGy\\">Fix act() tests by properly unmounting the container</a>
+    <div class=\\"sc-bwzfXH jXZiCh\\"><a href=\\"https://github.com/facebook/react/pull/14974\\" class=\\"sc-bxivhb KqdGy\\">Fix act() tests by properly unmounting the container</a>
       <label
-      font-weight=\\"bold\\" class=\\"sc-bdVaJa bkWGGt\\">CLA Signed</label>
-        <div class=\\"sc-htpNat cIOpPI\\">
-          <label font-weight=\\"normal\\" class=\\"sc-bdVaJa gYYtiD\\">#14974 opened 6 days ago by philipp-spiess</label>
+      font-weight=\\"bold\\" class=\\"sc-htpNat kPKryi\\">CLA Signed</label>
+        <div class=\\"sc-bwzfXH jXZiCh\\">
+          <label font-weight=\\"normal\\" class=\\"sc-htpNat ePqaPb\\">#14974 opened 6 days ago by philipp-spiess</label>
         </div>
     </div>
   </div>
-  <div class=\\"issue sc-bwzfXH feTYWS\\">
+  <div class=\\"issue sc-bdVaJa IwQOz\\">
     <svg fill=\\"green\\" css=\\"flex: 1 0 0;\\" class=\\"sc-EHOje isaVFh\\">issueStatus.svg</svg>
-    <div class=\\"sc-htpNat cIOpPI\\"><a href=\\"https://github.com/facebook/react/pull/15030\\" class=\\"sc-bxivhb KqdGy\\">Test suspended children are hidden before layout in persistent mode</a>
+    <div class=\\"sc-bwzfXH jXZiCh\\"><a href=\\"https://github.com/facebook/react/pull/15030\\" class=\\"sc-bxivhb KqdGy\\">Test suspended children are hidden before layout in persistent mode</a>
       <label
-      font-weight=\\"bold\\" class=\\"sc-bdVaJa bkWGGt\\">CLA Signed</label>
-        <div class=\\"sc-htpNat cIOpPI\\">
-          <label font-weight=\\"normal\\" class=\\"sc-bdVaJa gYYtiD\\">#15030 opened about 18 hours ago by acdlite</label>
+      font-weight=\\"bold\\" class=\\"sc-htpNat kPKryi\\">CLA Signed</label>
+        <div class=\\"sc-bwzfXH jXZiCh\\">
+          <label font-weight=\\"normal\\" class=\\"sc-htpNat ePqaPb\\">#15030 opened about 18 hours ago by acdlite</label>
         </div>
     </div><a href=\\"https://github.com/facebook/react/pull/15030\\" class=\\"sc-bxivhb kosjtV\\"><svg class=\\"sc-ifAKCX cFlEyZ\\">bubble.svg</svg><span>1</span></a>
   </div>

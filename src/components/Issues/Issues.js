@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import githubAPI from '../../services/githubServices';
-import Label from '../Label';
 import Issue from '../Issue';
-import { IssueWrapper } from '../Issue/Issue.styled';
-import { IssuesMainWrapper } from './issues.styled';
+import { IssuesMainWrapper, SpinnerWrapper } from './issues.styled';
+import Spinner from '../Spinner';
 
 const renderIssues = (issues = []) => issues.map(issue => <Issue {...issue} key={issue.id} />);
 
@@ -64,11 +63,7 @@ class Issues extends Component {
     return (
       <IssuesMainWrapper className="issues">
         {renderIssues(issues)}
-        {loading &&
-          <IssueWrapper>
-            <Label fontWeight='bold' css={'text-align: center;'}>{'Loading...'}</Label>
-          </IssueWrapper>
-        }
+        {loading && <SpinnerWrapper><Spinner /></SpinnerWrapper>}
       </IssuesMainWrapper>
     )
   }
